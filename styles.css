@@ -28,6 +28,18 @@ body {
 /* 2. Typography Styles
 ======================================== */
 
+h2,
+h3,
+h5 {
+    margin: 0;
+    padding: 10px;
+    padding-bottom: 15px;
+}
+
+p {
+    font-size: 20px;
+}
+
 img {
     width: 300px;
     height: 200px;
@@ -54,6 +66,290 @@ a {
 
 /* 3. Structure Styles
 ======================================== */
+
+
+header {
+    width: 1250px;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+    opacity: .85;
+}
+
+    header img {
+        margin-left: 20px;
+        height: 50px;
+        width: 150px;
+    }
+
+headerMenu {
+    display: inline-flex;
+}
+
+main {
+    margin: 0 auto;
+}
+
+.ourMission {
+    display: flex;
+    position: relative;
+    top: 80px;
+    margin: 0px auto;
+    height: 700px;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*1jl0lkz*_ga*NTI4NDIxMDgwMy4xNjgyNjU1NzE4*_ga_3LRZM6TM9L*MTY4NjAxMzY0Mi4xMDguMS4xNjg2MDE0MDMzLjUxLjAuMA..");
+    max-width: 1200px;
+}
+
+.ourMission-text {
+    width: 100%;
+    background-color: black;    
+    margin: auto;
+}
+
+.teaOfTheMonth {
+    display: flex;
+    width: 1000px;    
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 120px auto;
+}
+
+.imagesText {
+    display: block;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.image-Container {
+    margin: 10px;
+}
+
+.locations {
+    width: 1200px;
+    margin: 0 auto; 
+    height: 500px;
+    background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*5vrahf*_ga*NTI4NDIxMDgwMy4xNjgyNjU1NzE4*_ga_3LRZM6TM9L*MTY4NjAxNjQ4OS4xMDkuMS4xNjg2MDE2NTM4LjExLjAuMA..);
+    padding-top: 70px;
+}
+
+.box-container {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.box {    
+    opacity: 1.0;
+    padding: 10px;
+    margin: 5px 20px;
+    background-color: black;
+    flex-basis: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact {
+    height: 200px;
+    text-align: center;
+    width: 100%;
+}
+
+footer {
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+
+/* 4. Module Styles
+======================================== */
+
+/* 5. Component Styles
+======================================== */
+
+
+
+
+
+/*
+    
+<!DOCTYPE html
+<html>
+<head>
+    <title>Tea Cozy</title>
+   <link rel="stylesheet" href= "Tea Cozy.css">
+</head>
+
+<body>
+    <div class="header">
+        <img class="logo" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-tea-cozy-logo.png?_gl=1*2693kj*_ga*MTU2ODgxMDkwLjE2NzIxNTM3NTE.*_ga_3LRZM6TM9L*MTY3NDA0OTYwMy42MC4xLjE2NzQwNDk2MDcuMC4wLjA.">
+        <nav>
+            <ul class="navigation">
+                <a href="#Missions"><li>Missions</li></a>
+                <a href="#Tea"><li>Featured Tea</li></a>
+                <a href="#Locations"><li>Locations<li></a>
+            </ul>
+        </nav>
+    </div>
+
+<div id="Missions">
+    <div class="mission-container">
+        <div class="mission-text">
+            <h2>Our Missions</h2>
+            <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+        </div>
+    </div>
+</div>  
+        <div id="Tea">
+            <div class="tom-text">
+                <h1>Tea of the Month</h1>
+                <h2>What's steeping at The Tea Cozy?</h2>
+            </div>
+        </div>
+
+    <div class="tea-container">
+         <div class="tea">
+            <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-berryblitz.jpg?_gl=1*iswaig*_ga*MTU2ODgxMDkwLjE2NzIxNTM3NTE.*_ga_3LRZM6TM9L*MTY3NDA0OTYwMy42MC4xLjE2NzQwNDk2MDcuMC4wLjA." alt="A cup of tea with berries in it">
+            <figcaption>Berry Blitz</figcaption>
+        </div>
+        <div class="tea">
+            <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-spiced-rum.jpg?_gl=1*1ugpk5y*_ga*MTU2ODgxMDkwLjE2NzIxNTM3NTE.*_ga_3LRZM6TM9L*MTY3NDA0OTYwMy42MC4xLjE2NzQwNDk2MDcuMC4wLjA." alt="A box of spiced rum which says 'It pays to buy good tea'">
+            <figcaption>Spiced Rum Tea</figcaption>
+        </div>
+        <div class="tea">            
+            <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-donut.jpg?_gl=1*12rc2vg*_ga*MTU2ODgxMDkwLjE2NzIxNTM3NTE.*_ga_3LRZM6TM9L*MTY3NDA0OTYwMy42MC4xLjE2NzQwNDk2MDcuMC4wLjA." alt="A sugary donut">
+            <figcaption>Seasonal Donuts</figcaption>
+        </div>
+        <div class="tea">
+            <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-myrtle-ave.jpg?_gl=1*12rc2vg*_ga*MTU2ODgxMDkwLjE2NzIxNTM3NTE.*_ga_3LRZM6TM9L*MTY3NDA0OTYwMy42MC4xLjE2NzQwNDk2MDcuMC4wLjA." alt="A cup of myrtle tea">
+            <figcaption>Myrtle Ave Tea</figcaption>
+        </div>
+        <div class="tea">
+            <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-bedford-bizarre.jpg?_gl=1*1xqliu1*_ga*MTU2ODgxMDkwLjE2NzIxNTM3NTE.*_ga_3LRZM6TM9L*MTY3NDA0OTYwMy42MC4xLjE2NzQwNDk2MDcuMC4wLjA." alt="A cup of tea with a pot of sugar">
+            <figcaption>Bedford Bizarre Tea</figcaption>
+        </div>
+    </div>
+
+
+<div id="Locations">
+
+    <h2>Locations</h2>
+
+    <div class="box-container">
+        <div class="box">
+            <h3>Downtown</h3>
+            <p> 384 West 4th St</p>
+            <p>Suite 108</p>
+            <p>Portland, Maine</p>
+        </div>
+        <div class="box">
+            <h3>East Bayside</h3>
+            <p> 3433 Phisherman's Avenue</p>
+            <p>(Northwest Corner)</p>
+            <p>Portland, Maine</p>
+        </div>
+        <div class="box">
+            <h3>Oakdale</h3>
+            <p>515 Crescent Avenue</p>
+            <p>Second</p>
+            <p>Portland, Maine</p>
+        </div>
+    </div>
+    </div>
+
+
+    <div id="contact">
+        <h2>The Tea Cozy</h2>
+        <h5>contact@theteacozy.com</h5>
+        <h5>917-555-8904</h5>
+      </div>
+
+    <footer>
+        <div class="copyright">
+          <h5> &copy; Copyright The Tea Cozy 2021</h5>
+        </div>     
+    </footer>
+    </body>
+  </html>
+*/
+
+
+
+/*
+
+/* Site Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Structure Styles
+  4. Module Styles
+  5. Component Styles
+======================================== */
+
+/* 1. Global Styles
+======================================== 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: seashell;
+    font-family: Helvetica;
+    font-size: 22px;
+    opacity: 0.8;
+    text-align: center;
+    width: 1250px;
+    margin: 0 auto;
+}
+
+
+/* 2. Typography Styles
+======================================== 
+
+img {
+    width: 300px;
+    height: 200px;
+}
+
+ul {
+    display: inline-flex;
+    list-style: none;
+    margin-right: 50px;
+}
+
+li {
+    margin-right: 30px;
+}
+
+    li:last-of-type {
+        margin-right: -50px;
+    }
+
+a {
+    color: seashell;
+}
+
+
+/* 3. Structure Styles
+======================================== 
 
 
 header {
@@ -121,19 +417,19 @@ main {
         margin-bottom: 10px;
     }
 
-.containerTopRow { /* all three top images*/
+.containerTopRow { /* all three top images
     display: inline-grid;
     margin-bottom: 40px;
     margin-right: 30px;
 }
 
-.containerBottomRow1 { /* bottom row picture to the left */
+.containerBottomRow1 { /* bottom row picture to the left 
     display: inline-grid;
     margin-left: 200px;
     margin-right: 30px;
 }
 
-.containerBottomRow2 { /* bottom row picture to the right */
+.containerBottomRow2 { /* bottom row picture to the right 
     display: inline-grid;
 }
 
@@ -203,3 +499,5 @@ footer {
 
 /* 5. Component Styles
 ======================================== */
+
+*/
