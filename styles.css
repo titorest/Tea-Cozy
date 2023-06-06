@@ -105,7 +105,7 @@ main {
 .teaOfTheMonth {
     position: relative;
     top: 140px;
-    left: 130px;
+    left: 120px;
     width: 1000px;
     margin-bottom: 200px;
 }
@@ -186,7 +186,7 @@ main {
 .contact {
     height: 200px;
     position: relative;
-    right: 15px;
+    right: 20px;
 }
 
 footer {
